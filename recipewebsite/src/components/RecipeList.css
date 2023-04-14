@@ -1,0 +1,12 @@
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+  }
+
+.recipe-info{
+  text-decoration: none;
+}

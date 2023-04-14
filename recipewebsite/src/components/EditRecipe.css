@@ -1,0 +1,37 @@
+/* EditRecipe.css */
+.edit-recipe-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .edit-recipe-label {
+    margin-bottom: 5px;
+  }
+  
+  .edit-recipe-input,
+  .edit-recipe-textarea {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  .edit-recipe-textarea {
+    resize: none;
+    min-height: 100px;
+  }
+  
+  .edit-recipe-button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+  }
+  

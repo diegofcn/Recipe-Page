@@ -1,0 +1,15 @@
+.category-container {
+    margin-bottom: 2rem;
+  }
+  
+  .category-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+.head{
+  font-family: 'Cinzel Decorative', sans-serif;
+  margin-bottom: 0;
+  margin-left: 30px;
+  font-size: 32px;
+}
