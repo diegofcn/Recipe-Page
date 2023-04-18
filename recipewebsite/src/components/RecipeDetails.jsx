@@ -35,7 +35,9 @@ const RecipeDetails = () => {
       </div>
       </div>
       <h1 className='title'>{recipe.title.toUpperCase()}</h1>
+      <hr className='divider'/>
       </div>
+      
       <div className="recipe-details-container">
       <div className="ingredients-container">
         <h2>Ingredients</h2>
@@ -54,9 +56,11 @@ const RecipeDetails = () => {
         </ol>
       </div>
     </div>
-    <Link to={`/recipe/${recipe._id}/edit`}>
-    <button>Edit Recipe</button>
-  </Link>
+    <div className='btn-container'>
+      <Link to={`/recipe/${recipe._id}/edit`}>
+        <button>Edit Recipe</button>
+      </Link>
+    </div>
     </div>
   );
 };

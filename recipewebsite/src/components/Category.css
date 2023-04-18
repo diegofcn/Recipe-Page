@@ -11,5 +11,6 @@
   font-family: 'Cinzel Decorative', sans-serif;
   margin-bottom: 0;
   margin-left: 30px;
-  font-size: 32px;
+  font-size: 36px;
+  color: var(--clr-darkblue);
 }

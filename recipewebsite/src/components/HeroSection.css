@@ -14,9 +14,11 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: var(--clr-darkblue);
   }
   
   .hero-subtitle {
     font-size: 1.5rem;
+    color: var(--clr-blue);
   }
   

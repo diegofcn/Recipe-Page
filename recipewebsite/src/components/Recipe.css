@@ -1,7 +1,7 @@
 .recipe {
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--clr-darkblue);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -25,6 +25,8 @@
   
   .recipe-info {
     padding: 1rem;
+    text-decoration: none;
+    color: var(--clr-white);
   }
   
   .recipe-title {

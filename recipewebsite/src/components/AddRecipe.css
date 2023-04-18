@@ -9,6 +9,7 @@
   .AddRecipe label {
     display: block;
     margin: 1rem 0 0.5rem;
+    color: var(--clr-darkblue);
   }
   
   .AddRecipe input,

@@ -1,36 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@100;200;300;600&display=swap');
-body{
-  font-family: 'Poppins', sans-serif;
+
+:root{
+  --clr-white: #e7eaf6;
+  --clr-lightblue: #a2a8d3;
+  --clr-blue: #38598b;
+  --clr-darkblue: #113f67;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--clr-white);
+  color: var(--clr-white);
+  margin: 0;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
 button {
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    margin: 1rem 0;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  background-color: var(--clr-blue);
+  border: none;
+  border-radius: 5px;
+  color: var(--clr-white);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: var(--clr-darkblue);
+}
 
 .hero {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-size: cover;
+  background-position: center;
 }
 
-.title{
+.title {
   font-family: 'Cinzel Decorative', sans-serif;
   font-size: 56px;
   text-align: center;
+  color: var(--clr-darkblue);
+  margin-bottom: 0;
 }
-.container{
+
+.container {
   display: flex;
   justify-content: center;
   padding: 24px;
@@ -38,38 +65,68 @@ button {
 
 .image-container {
   position: relative;
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  border: 5px solid var(--clr-blue);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-container img {
   display: block;
   max-width: 100%;
   margin: 0 auto;
-
 }
 
 .recipe-details-container {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.ingredients-container,
+.instructions-container {
+  background-color: var(--clr-darkblue);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 24px;
+  margin-top: 0;
 }
 
 .ingredients-container {
   flex: 0 0 30%;
-  border: 1px solid #000;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  height: 600px;
+  height: auto;
+  margin-left: 0;
 }
 
 .instructions-container {
-  flex: 0 0 70%;
-  padding: 20px;
-  box-sizing: border-box;
+  flex: 0 0 68%;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.divider {
+  margin-top: 50px;
+  width: 600px;
+  border-top: 1px solid var(--clr-darkblue);
 }

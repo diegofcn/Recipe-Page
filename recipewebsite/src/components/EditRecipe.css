@@ -8,6 +8,7 @@
   
   .edit-recipe-label {
     margin-bottom: 5px;
+    color: var(--clr-darkblue);
   }
   
   .edit-recipe-input,
